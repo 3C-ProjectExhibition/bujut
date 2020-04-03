@@ -1,0 +1,143 @@
+.header-wrapper{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 255, 0.5)), url('https://timedotcom.files.wordpress.com/2018/05/facebook-mark-zuckerberg-f8-2018.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+
+}
+
+.scrolly {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+	background-color: #f3f3f3;
+	padding: 0.5vw;
+}
+
+.scrolly > * {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+
+article {
+	position: relative;
+	padding: 0 1rem;
+	max-width: 20rem;
+}
+
+figure {
+	position: -webkit-sticky;
+	position: sticky;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	background-color: cadetblue;
+}
+
+figure p {
+	text-align: center;
+	padding: 1rem;
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 8rem;
+	font-weight: 900;
+	color: #fff;
+	z-index: 1;
+}
+
+
+.step {
+	margin: 0 auto 2rem auto;
+	background-color: #3b3b3b;
+	color: #fff;
+}
+
+.step:last-child {
+	margin-bottom: 0;
+}
+
+.step.is-active {
+	background-color: goldenrod;/*TODO:统一色彩*/
+	color: #3b3b3b;
+}
+
+.step p {
+	text-align: center;
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+
+.non-scro-step{
+	margin: 0 auto 2rem auto;
+	background-color: #3b3b3b;
+	color: #fff;
+}
+.non-scro-step p {
+	text-align: center;
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+.non-scro-step:last-child {
+	margin-bottom: 0;
+}
+.pic{
+	position: fixed;/*Scroll的核心语句：让其居中并保持固定*/
+	z-index: 2;/*video的层级：1*/
+	text-align: center;
+	width: 100%;
+	height: 100%;/*TODO:图片和视频不同，产生割裂，待解决*/
+	/*object-fit: fill;*/ /*填充满div；fill会破坏原宽高比 */
+	display:block;
+	border:20rem;
+	border-color: red;
+}
+
+#v0 {
+	position: fixed;/*Scroll的核心语句：让其居中并保持固定*/
+	z-index: 2;/*video的层级：1*/
+	width: 100%;
+	height:100%;
+	/*object-fit: fill;*/ /*填充满div；fill会破坏原宽高比 */
+	display:block;
+	border:20rem;
+	border-color: red;
+}
+#set-height_video {
+	display: block;
+}
+
+
+#wrapper {
+	padding: 0 3rem 0 3rem;
+	max-width: 95%;
+	margin: auto;
+	font-family: georgia;
+	line-height: 1.5rem; }
+
+.innerbox{
+	padding: 0 2rem;
+
+}
+.innerbox p{
+	font-family:Arial;
+	background-color: rgba(255,255,255,0.1);
+	text-align: left;
+	font-size: 0.8rem;
+	border: 0.18rem solid #8a8a8a;
+}
+
