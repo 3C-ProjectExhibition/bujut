@@ -97,7 +97,7 @@ figure p {
 }
 .pic{
 	position: fixed;/*Scroll的核心语句：让其居中并保持固定*/
-	z-index: 2;/*video的层级：1*/
+	z-index: 1;/*video的层级：1*/
 	text-align: center;
 	width: 100%;
 	height: 100%;/*TODO:图片和视频不同，产生割裂，待解决*/
